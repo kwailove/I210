@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="tournament.html">Tournament</a>
+      <a href="contact.html">Contact</a>
+    </header>
+
+    <form action="formPost.html" method="get">
+      <div class="formfield">
+        <label for="phone">Cell:</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+
+      <div class="formfield">
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="formfield">
+        <label for="reason">Reason:</label>
+        <select name="reason" id="reason">
+          <option value="Grade Question">Grade Question</option>
+          <option value="Attendance Question">Attendance Question</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Email</legend>
+        <input type="email" name="email" id="email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Favorite Color</legend>
+        <select name="favoritecolor" size="5" id="favoritecolor" multiple>
+          <option value="pink">Pink</option>
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="blue">Blue</option>
+          <option value="indigo">Indigo</option>
+          <option value="violet">Violet</option>
+          <option value="black">Black</option>
+          <option value="grey">Grey</option>
+          <option value="white">White</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mood</legend>
+
+        <div>
+          <input
+            type="range"
+            name="favoritecolor"
+            min="0"
+            max="10"
+            value="mood"
+            id="mood"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>True or False?</legend>
+
+        <div>
+          <input type="radio" name="trueorfalse" id="trueorfalse-true" />
+          <label for="trueorfalse-true">True</label>
+        </div>
+
+        <div>
+          <input type="radio" name="trueorfalse" id="trueorfalse-false" />
+          <label for="trueorfalse-false">False</label>
+        </div>
+      </fieldset>
+
+      <div class="formfield">
+        <input type="submit" value="Send" />
+      </div>
+    </form>
+
+    <footer>
+      <p>copyright lovesterra &copy;</p>
+    </footer>
+  </body>
+</html>
