@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 - Day 2</title>
+  </head>
+  <body>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+      <div>
+        <label for="fullname">FullName:</label>
+        <input type="text" name="fullname" id="fullname" required />
+      </div>
+
+      <fieldset>
+        <legend>Blood Type</legend>
+        <div>
+          <label for="bloodtype">Blood Type:</label>
+          <select name="bloodtype" id="bloodtype">
+            <!-- Put your select options -->
+            <option value="a positive">A+</option>
+            <option value="a negative">A-</option>
+            <option value="b positive">B+</option>
+            <option value="b negative">B-</option>
+            <option value="ab positive">AB+</option>
+            <option value="ab negative">AB-</option>
+            <option value="o positive">O+</option>
+            <option value="o negative">O-</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="height">Height (meters):</label>
+          <input type="number" name="height" id="height" step=".01" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Health Concerns</legend>
+        <div>
+          <label for="healthconcerns">Health Concerns:</label>
+          <input type="checkbox" name="healthconcerns" id="Missing Limb" />
+          </div>
+          <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            id="Drained of All Blood"
+          />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="healthconcerns"
+            id="Lost my hearing in forest"
+          />
+        </div>
+        </div>
+      </fieldset>
+
+<fieldset>
+    <legend>Describe Your Pain Level</legend>
+
+    <div>
+        <input type="radio" name="painlevel" id="painlevel-high">
+        <label for="painlevel-high">High</label>
+    </div>
+    
+    <div>
+        <input type="radio" name="painlevel" id="painlevel-medium">
+        <label for="painlevel-medium">Medium</label>
+    </div>
+
+    <div>
+        <input type="radio" name="painlevel" id="painlevel-low">
+        <label for="painlevel-low">Low</label>
+    </div>
+    
+</fieldset>
+
+
+      <div>
+        <input type="submit" value="Get Results" />
+        <input type="reset" value="Cancel">
+      </div>
+    </form>
+  </body>
+</html>

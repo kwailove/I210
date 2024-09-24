@@ -1,0 +1,29 @@
+
+/*select an element to style*/
+h1 {
+  font-size: 40px;
+  background-color: pink;
+  margin: 20px;
+  padding-top: 40px
+  padding-bottom: 20px
+  border: 4px dashed black ;
+}
+
+/* select a class to style*/
+.crazy-text {
+  color: whitesmoke;
+  background-color: slategray;
+  width: 200px;
+}
+/* selet an id to style*/
+#one {
+  color: blue;
+}
+/* select a nested element*/
+ol li {
+  background-color: limegreen;
+}
+
+section h3 + p {
+  font-size: 10px;
+}
